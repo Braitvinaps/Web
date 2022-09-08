@@ -89,7 +89,7 @@
         @click.stop="clickShowAll"
       >
         <p
-          v-if="reglaments[0]?.items.length || reglaments[1]?.items.length "
+          v-if="items.length"
           class="font-roboto text-[17px] leading-[22px]"
         >
           {{ showAllReglaments ? 'Показать только доступные' : 'Показать все регламенты' }}
