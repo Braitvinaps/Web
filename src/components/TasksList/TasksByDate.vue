@@ -5,7 +5,7 @@
       class="pt-[8px]"
       :title="dateLabel"
     />
-    <TasksListNew />
+    <TasksListNew :new-task-props="newTaskProps" />
     <PropertiesRight />
   </div>
 </template>
@@ -32,6 +32,13 @@ export default {
       const weekday = date.toLocaleString('default', { weekday: 'short' })
       const dateLabelFormat = day + ' ' + month + ', ' + weekday
       return dateLabelFormat
+    },
+    newTaskProps () {
+      const date = new Date(this.date)
+      return ({
+        date_begin: this.getDateString(date) + 'T00:00:00',
+        date_end: this.getDateString(date) + 'T23:59:59'
+      })
     }
   },
   watch: {
@@ -48,6 +55,15 @@ export default {
     loadTasks () {
       const date = new Date(this.date)
       this.$store.dispatch('TASKS_REQUEST', date)
+    },
+    pad2 (n) {
+      return (n < 10 ? '0' : '') + n
+    },
+    getDateString (date) {
+      const month = this.pad2(date.getMonth() + 1)
+      const day = this.pad2(date.getDate())
+      const year = this.pad2(date.getFullYear())
+      return year + '-' + month + '-' + day
     }
   }
 }

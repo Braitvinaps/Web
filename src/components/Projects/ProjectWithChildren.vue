@@ -23,6 +23,7 @@
     </div>
     <TasksListNew
       class="pt-[8px]"
+      :new-task-props="newTaskProps"
     />
   </div>
 </template>
@@ -45,6 +46,14 @@ export default {
     },
     currentProject () {
       return this.$store.state.projects.projects[this.projectUid]
+    },
+    newTaskProps () {
+      if (this.currentProject?.uid) {
+        return ({
+          uid_project: this.currentProject.uid
+        })
+      }
+      return ({})
     }
   },
   watch: {

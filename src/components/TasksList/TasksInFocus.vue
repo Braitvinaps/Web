@@ -5,7 +5,7 @@
       class="pt-[8px]"
       title="Задачи в фокусе"
     />
-    <TasksListNew />
+    <TasksListNew :new-task-props="{ focus: 1 }" />
     <propertiesRight />
   </div>
 </template>
