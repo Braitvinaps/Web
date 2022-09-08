@@ -141,7 +141,8 @@
       v-if="!isTesting && contributors.length"
       class="mt-5"
     >
-      <button
+      <!-- Баг с именами(???)  -->
+      <!-- <button
         class="flex items-center font-['Roboto'] text-[#424242] dark:bg-gray-700 dark:text-gray-100 rounded-lg text-[13px] font-medium hover:text-black transition"
         @click="showEmployees = !showEmployees"
       >
@@ -160,7 +161,7 @@
             fill="#4C4C4D"
           />
         </svg>
-      </button>
+      </button> -->
       <div
         v-if="showEmployees"
         class="flex items-center mt-2.5 pb-2 flex-wrap gap-y-[10px]"

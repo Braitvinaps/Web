@@ -1,47 +1,47 @@
 <template>
   <div class="max-h-full h-full flex items-start overflow-y-hidden overflow-x-auto scroll-style animate-pulse flex pr-4 mt-0.5">
     <div :class="containerOuter">
-      <hr :class="[headers, 'w-[150px]']"/>
-      <hr :class="[lightText,'w-[100px]']"/>
-      <div :class="[container, 'h-[150px]']" >
+      <hr :class="[headers, 'w-[150px]']">
+      <hr :class="[lightText,'w-[100px]']">
+      <div :class="[container, 'h-[150px]']">
         <BoardSkeleton150 />
       </div>
-      <div :class="[container, 'h-[120px]']" >
+      <div :class="[container, 'h-[120px]']">
         <BoardSkeleton120 />
       </div>
-      <div :class="[container, 'h-[240px]']" >
+      <div :class="[container, 'h-[240px]']">
         <BoardSkeleton240 />
       </div>
-      <div :class="[container, 'h-[200px]']" >
+      <div :class="[container, 'h-[200px]']">
         <BoardSkeleton200 />
       </div>
     </div>
     <div :class="containerOuter">
-      <div :class="[headers, 'w-[80px]']"/>
-      <div :class="[lightText,'w-[120px]']"/>
-      <div :class="[container, 'h-[240px]']" >
+      <div :class="[headers, 'w-[80px]']" />
+      <div :class="[lightText,'w-[120px]']" />
+      <div :class="[container, 'h-[240px]']">
         <BoardSkeleton240 />
       </div>
-      <div :class="[container, 'h-[150px]']" >
+      <div :class="[container, 'h-[150px]']">
         <BoardSkeleton150 />
       </div>
-      <div :class="[container, 'h-[120px]']" >
+      <div :class="[container, 'h-[120px]']">
         <BoardSkeleton120 />
       </div>
-      <div :class="[container, 'h-[200px]']" >
+      <div :class="[container, 'h-[200px]']">
         <BoardSkeleton200 />
       </div>
     </div>
     <div :class="containerOuter">
-      <div :class="[headers, 'w-[120px]']"/>
-      <div :class="[lightText,'w-[90px]']"/>
-      <div :class="[container, 'h-[200px]']" >
+      <div :class="[headers, 'w-[120px]']" />
+      <div :class="[lightText,'w-[90px]']" />
+      <div :class="[container, 'h-[200px]']">
         <BoardSkeleton200 />
       </div>
-      <div :class="[container, 'h-[120px]']" >
+      <div :class="[container, 'h-[120px]']">
         <BoardSkeleton120 />
       </div>
-      <div :class="[container, 'h-[240px]']" >
+      <div :class="[container, 'h-[240px]']">
         <BoardSkeleton240 />
       </div>
       <div :class="[container, 'h-[150px]']">
@@ -49,84 +49,84 @@
       </div>
     </div>
     <div :class="containerOuter">
-      <div :class="[headers, 'w-[180px]']"/>
-      <div :class="[lightText,'w-[110px]']"/>
+      <div :class="[headers, 'w-[180px]']" />
+      <div :class="[lightText,'w-[110px]']" />
       <div :class="[container, 'h-[150px]']">
         <BoardSkeleton150 />
       </div>
       <div :class="[container, 'h-[240px]']">
         <BoardSkeleton240 />
       </div>
-      <div :class="[container, 'h-[120px]']" >
+      <div :class="[container, 'h-[120px]']">
         <BoardSkeleton120 />
       </div>
-      <div :class="[container, 'h-[200px]']" >
+      <div :class="[container, 'h-[200px]']">
         <BoardSkeleton200 />
       </div>
     </div>
     <div :class="containerOuter">
-      <div :class="[headers, 'w-[130px]']"/>
-      <div :class="[lightText,'w-[80px]']"/>
-      <div  :class="[container, 'h-[240px]']" >
+      <div :class="[headers, 'w-[130px]']" />
+      <div :class="[lightText,'w-[80px]']" />
+      <div :class="[container, 'h-[240px]']">
         <BoardSkeleton240 />
       </div>
-      <div  :class="[container, 'h-[150px]']" >
+      <div :class="[container, 'h-[150px]']">
         <BoardSkeleton150 />
       </div>
-      <div  :class="[container, 'h-[120px]']" >
+      <div :class="[container, 'h-[120px]']">
         <BoardSkeleton120 />
       </div>
-      <div :class="[container, 'h-[200px]']" >
+      <div :class="[container, 'h-[200px]']">
         <BoardSkeleton200 />
       </div>
     </div>
     <div :class="containerOuter">
-      <div :class="[headers, 'w-[90px]']"/>
-      <div :class="[lightText,'w-[70px]']"/>
-      <div :class="[container, 'h-[150px]']" >
+      <div :class="[headers, 'w-[90px]']" />
+      <div :class="[lightText,'w-[70px]']" />
+      <div :class="[container, 'h-[150px]']">
         <BoardSkeleton150 />
       </div>
-      <div :class="[container, 'h-[200px]']" >
+      <div :class="[container, 'h-[200px]']">
         <BoardSkeleton200 />
       </div>
-      <div :class="[container, 'h-[240px]']" >
+      <div :class="[container, 'h-[240px]']">
         <BoardSkeleton240 />
       </div>
-      <div :class="[container, 'h-[120px]']" >
+      <div :class="[container, 'h-[120px]']">
         <BoardSkeleton120 />
       </div>
     </div>
     <div :class="containerOuter">
-      <div :class="[headers, 'w-[140px]']"/>
-      <div :class="[lightText,'w-[80px]']"/>
-      <div :class="[container, 'h-[200px]']" >
+      <div :class="[headers, 'w-[140px]']" />
+      <div :class="[lightText,'w-[80px]']" />
+      <div :class="[container, 'h-[200px]']">
         <BoardSkeleton200 />
       </div>
       <div :class="[container, 'h-[150px]']">
         <BoardSkeleton150 />
       </div>
-      <div :class="[container, 'h-[240px]']" >
+      <div :class="[container, 'h-[240px]']">
         <BoardSkeleton240 />
       </div>
-      <div :class="[container, 'h-[120px]']" >
+      <div :class="[container, 'h-[120px]']">
         <BoardSkeleton120 />
       </div>
     </div>
     <div :class="containerOuter">
-      <div :class="[headers, 'w-[180px]']"/>
+      <div :class="[headers, 'w-[180px]']" />
       <div :class="[lightText,'w-[120px]']">
         <BoardSkeleton120 />
       </div>
-      <div :class="[container, 'h-[240px]']" >
+      <div :class="[container, 'h-[240px]']">
         <BoardSkeleton240 />
       </div>
-      <div :class="[container, 'h-[150px]']" >
+      <div :class="[container, 'h-[150px]']">
         <BoardSkeleton150 />
       </div>
-      <div :class="[container, 'h-[120px]']" >
+      <div :class="[container, 'h-[120px]']">
         <BoardSkeleton120 />
       </div>
-      <div :class="[container, 'h-[200px]']" >
+      <div :class="[container, 'h-[200px]']">
         <BoardSkeleton200 />
       </div>
     </div>

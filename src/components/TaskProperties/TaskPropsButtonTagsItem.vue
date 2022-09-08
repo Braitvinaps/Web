@@ -93,8 +93,8 @@
             :for="`tag-check-button-${tag.uid}`"
           >
             <span class="max-w-[160px] truncate ... mr-20px">
-            {{ tag.name }}
-              </span>
+              {{ tag.name }}
+            </span>
           </label>
         </div>
       </div>
