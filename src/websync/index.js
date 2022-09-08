@@ -22,7 +22,7 @@ function parseObject (obj) {
   }
 }
 
-export default function initWebSync () {
+export function initWebSync () {
   const clientProperty = 'client'
   const websync = window?.fm?.websync
 

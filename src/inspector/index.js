@@ -33,8 +33,9 @@ function parseObject (obj) {
       break
   }
 }
-export default function initInspectorSocket () {
+export function initInspectorSocket () {
   const socket = new WebSocket(process.env.VUE_APP_INSPECTOR_WS)
+  window.inspectorSocket = socket
   socket.onopen = function (event) {
     const auth = {
       type: 'auth',
@@ -95,4 +96,8 @@ function createNotificationAndInspectorMessage (parsedData) {
     obj: parsedData.message_obj
   }
   createTaskMessage(message)
+}
+
+export function disconnectInspectorSocket () {
+  window.inspectorSocket.close()
 }
