@@ -28,6 +28,7 @@ export function updateBoard (obj) {
 
 export function removeBoard (obj) {
   store.commit(NAVIGATOR.NAVIGATOR_REMOVE_BOARD, obj)
+  store.commit(BOARD.REMOVE_BOARD_REQUEST, obj.uid)
   // Переносим на роут doitnow, если находились в доске, когда нас удалили из доступа к ней
   if (router.currentRoute.value.fullPath === `/board/${obj.uid}`) {
     router.push('/doitnow')
@@ -35,5 +36,6 @@ export function removeBoard (obj) {
 }
 
 export function addBoard (obj) {
+  store.commit(BOARD.PUSH_BOARD, [obj])
   store.commit(NAVIGATOR.NAVIGATOR_PUSH_COMMON_BOARD, obj)
 }
