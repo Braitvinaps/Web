@@ -27,7 +27,6 @@
       class="fixed-create z-[2] flex bg-[#f4f5f7] px-[3px] pt-px relative lg:static top-0"
     >
       <div
-        id="step1"
         class="flex items-center bg-[#FAFAFB] border dark:bg-gray-700 rounded-[8px] w-full"
       >
         <div
@@ -355,7 +354,11 @@ export default {
   props: {
     hideInput: {
       type: Boolean,
-      defalut: false
+      default: false
+    },
+    newTaskProps: {
+      type: Object,
+      default: () => ({})
     }
   },
   emits: ['changeTaskStatus'],
@@ -783,10 +786,8 @@ export default {
       e.target.focus()
       const title = data.name.trim()
       if (title) {
+        Object.assign(data, this.newTaskProps)
         data.name = title
-        if (this.$route.name === 'tasksDelegateByMe') {
-          data.email_performer = this.$store.state?.employees?.employees[this.$route?.params?.employee_uid]?.email
-        }
         this.$store.dispatch(TASK.CREATE_TASK, data)
           .then((resp) => {
           // выделяем добавленную задачу

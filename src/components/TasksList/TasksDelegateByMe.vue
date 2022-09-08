@@ -5,7 +5,7 @@
       class="pt-[8px]"
       :title="'Поручено мной: ' + employeeName"
     />
-    <TasksListNew />
+    <TasksListNew :new-task-props="newTaskProps" />
     <PropertiesRight />
   </div>
 </template>
@@ -43,6 +43,14 @@ export default {
     },
     employeeName () {
       return this.employee?.name ?? '???'
+    },
+    newTaskProps () {
+      if (this.employee?.email) {
+        return ({
+          email_performer: this.employee.email
+        })
+      }
+      return ({})
     }
   },
   watch: {

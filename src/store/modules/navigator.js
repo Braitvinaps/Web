@@ -10,6 +10,7 @@ import {
   NAVIGATOR_PUSH_BOARD,
   NAVIGATOR_PUSH_COLOR,
   NAVIGATOR_PUSH_COMMON_BOARD,
+  NAVIGATOR_PUSH_COMMON_PROJECT,
   NAVIGATOR_PUSH_DEPARTAMENT,
   NAVIGATOR_PUSH_EMPLOYEE,
   NAVIGATOR_PUSH_PROJECT,
@@ -464,7 +465,7 @@ const mutations = {
       }
     }
   },
-  [NAVIGATOR_PUSH_COMMON_BOARD]: (state, projects) => {
+  [NAVIGATOR_PUSH_COMMON_PROJECT]: (state, projects) => {
     for (const project of projects) {
       if (
         !project.uid_parent ||

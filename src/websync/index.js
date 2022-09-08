@@ -36,7 +36,7 @@ export default function initWebSync () {
         'websync.ashx?uid_session=' +
         storeNavigator.value.push_channel
   )
-
+  window.fm.websync.currentClient = client
   // client в перемунную и в функции использовать
   client.connect({
     onSuccess: function (e) {
@@ -82,10 +82,5 @@ export default function initWebSync () {
 }
 
 export function disconnectWebSync () {
-  console.log('websync disconnected')
-  const websync = window?.fm?.websync
-
-  const client = websync?.client
-
-  return client.disconnect
+  window?.fm?.websync?.currentClient.disconnect()
 }
